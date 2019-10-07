@@ -12,7 +12,6 @@ test('race condition then non race', function(assert) {
     }
 
     function getValueLetters(p: string) {
-        console.log("getValueLetters: ", p);
         record(p);
         return new Promise((resolve) => {
             setTimeout(() => {
@@ -39,12 +38,10 @@ test('race condition then non race', function(assert) {
                     assert.end();
                 })
                 .catch((e) => {
-                    console.log(e);
                     assert.fail();
                 });
         })
         .catch((e) => {
-            console.log(e);
             assert.fail();
         })
 

@@ -36,7 +36,6 @@ function getCache(f) {
                 throw new Error("Esqlate Cache: WaitFor: Ended without success or error?");
             });
         }
-        console.log("R: ", cacheKey);
         retreiving.add(cacheKey);
         return f.apply(null, args)
             .then(function (value) {

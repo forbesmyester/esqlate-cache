@@ -1,6 +1,6 @@
 {
   "name": "esqlate-cache",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Intelligent caching, handles race conditions and when not cached",
   "main": "./dist/index.js",
   "dependencies": {
